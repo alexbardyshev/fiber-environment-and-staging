@@ -6,13 +6,14 @@ import { Perf } from 'r3f-perf'
 export default function Experience()
 {
     const cube = useRef()
-    
+
     useFrame((state, delta) =>
     {
         cube.current.rotation.y += delta * 0.2
     })
 
     return <>
+        <color args={['ivory']} attach="background" />
 
         <Perf position="top-left" />
 
